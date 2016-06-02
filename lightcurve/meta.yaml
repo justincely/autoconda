@@ -1,0 +1,36 @@
+package:
+  name: 'lightcurve'
+  version: '0.5.2'
+
+source:
+  git_url: https://github.com/justincely/lightcurve.git
+
+requirements:
+  build:
+    - astropy
+    - cython
+    - scipy
+    - numba 0.24.0
+    - matplotlib
+    - setuptools
+    - numpy
+    - python
+
+  run:
+    - astropy
+    - cython
+    - scipy
+    - numba 0.24.0
+    - matplotlib
+    - numpy
+    - python
+
+test:
+  requires:
+    - astropy
+  imports:
+    - lightcurve
+
+about:
+  home: https://github.com/justincely/lightcurve
+  license: BSD

@@ -1,0 +1,40 @@
+package:
+  name: 'refstis'
+  version: '0.6.0'
+
+source:
+  git_url: https://github.com/spacetelescope/refstis.git
+
+requirements:
+  build:
+    - astropy
+    - cython
+    - scipy
+    - stistools
+    - crds 6.0.0
+    - matplotlib
+    - setuptools
+    - numpy
+    - pyyaml
+    - python
+
+  run:
+    - astropy
+    - cython
+    - scipy
+    - stistools
+    - crds 6.0.0
+    - matplotlib
+    - numpy
+    - pyyaml
+    - python
+
+test:
+  requires:
+    - astropy
+  imports:
+    - refstis
+
+about:
+  home: https://github.com/spacetelescope/refstis
+  license: BSD
